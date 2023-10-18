@@ -31,3 +31,48 @@ body {
 	text-align: center;
 	padding-bottom: 20px;
 }
+
+/* MAIN */
+
+#name-label,
+#email-label,
+#number-label,
+#education-label,
+#seniority-label {
+	display: block;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#seniority,
+#additional-comments,
+#submit {
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	color: rgb(17, 27, 51);
+	font-size: large;
+	padding: 5px 5px;
+	border: none;
+	border-radius: 3px;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: rgb(17, 27, 51);
+}
+
+h2 {
+	font-size: large;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+textarea {
+	height: 150px;
+}
+
+#additional-comments {
+	color: rgb(17, 27, 51);
+}
