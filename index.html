@@ -12,7 +12,197 @@
 				<h1 id="title">Career Satisfaction Survey Form</h1>
 				<p id="description">Thank you for taking the time to share your thoughts with us! Your feedback will help us improve our workplace culture and better understand our employees' needs.</p>
 			</header>
-			<main></main>
+			<main>
+				<form id="survey-form" action="https://register-demo.freecodecamp.org" method="post">
+					<div class="form-section">
+						<label for="name" id="name-label"><h2>Name:</h2></label>
+						<input type="text" id="name" name="name" placeholder="Enter your name here" required />
+					</div>
+					<div class="form-section">
+						<label for="email" id="email-label"><h2>Email:</h2></label>
+						<input type="email" id="email" name="email" placeholder="Enter your email here" required />
+					</div>
+					<div class="form-section">
+						<label for="number" id="number-label"><h2>Age (Years):</h2></label>
+						<input type="number" id="number" name="number" placeholder="Enter your age here" min="18" max="75" required />
+					</div>
+					<div class="form-section">
+						<label for="education" id="education-label"><h2>What is your highest education completed?</h2></label>
+						<select name="education" id="dropdown">
+							<option disabled selected value>Please select one</option>
+							<option value="high-school">High School Diploma or equivalent</option>
+							<option value="some-university-courses">Some University Courses</option>
+							<option value="associate">Associate's Degree</option>
+							<option value="bachelor">Bachelor's Degree</option>
+							<option value="master">Master's Degree</option>
+							<option value="phd">Doctorate or Professional Degree equivalent</option>
+						</select>
+					</div>
+					<div class="form-section">
+						<label for="seniority" id="seniority-label"><h2>How long have you been working for our company?</h2></label>
+						<select name="seniority" id="dropdown">
+							<option disabled selected value>Please select one</option>
+							<option value="1-">Less than 1 year</option>
+							<option value="1-2">1-2 years</option>
+							<option value="3-5">3-5 years</option>
+							<option value="6-9">6-9 years</option>
+							<option value="10+">10 years or more</option>
+						</select>
+					</div>
+					<div class="form-section">
+						<h2>How satisfied are you with the overall work environment at our company?</h2>
+						<input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied" />
+						<label for="very-satisfied">Very satisfied</label>
+						<br />
+						<input type="radio" id="somewhat-satisfied" name="satisfaction" value="somewhat-satisfied" />
+						<label for="somewhat-satisfied">Somewhat satisfied</label>
+						<br />
+						<input type="radio" id="neutral-satisfaction" name="satisfaction" value="neutral" checked />
+						<label for="neutral-satisfaction">Neutral</label>
+						<br />
+						<input type="radio" id="somewhat-dissatisfied" name="satisfaction" value="somewhat-dissatisfied" />
+						<label for="somewhat-dissatisfied">Somewhat dissatisfied</label>
+						<br />
+						<input type="radio" id="very-dissatisfied" name="satisfaction" value="very-dissatisfied" />
+						<label for="very-dissatisfied">Very dissatisfied</label>
+					</div>
+					<div class="form-section">
+						<h2>How satisfied are you with the level of recognition you receive for your work?</h2>
+						<input type="radio" id="recognition-very-satisfied" name="recognition" value="very-satisfied" />
+						<label for="recognition-very-satisfied">Very satisfied</label>
+						<br />
+						<input type="radio" id="recognition-somewhat-satisfied" name="recognition" value="somewhat-satisfied" />
+						<label for="recognition-somewhat-satisfied">Somewhat satisfied</label>
+						<br />
+						<input type="radio" id="recognition-neutral" name="recognition" value="neutral" checked />
+						<label for="recognition-neutral">Neutral</label>
+						<br />
+						<input type="radio" id="recognition-somewhat-dissatisfied" name="recognition" value="somewhat-dissatisfied" />
+						<label for="recognition-somewhat-dissatisfied">Somewhat dissatisfied</label>
+						<br />
+						<input type="radio" id="recognition-very-dissatisfied" name="recognition" value="very-dissatisfied" />
+						<label for="recognition-very-dissatisfied">Very dissatisfied</label>
+					</div>
+					<div class="form-section">
+						<h2>How well does your current position align with your career goals?</h2>
+						<input type="radio" id="career-align-very-well" name="career-align" value="very-well" />
+						<label for="career-align-very-well">Very well</label>
+						<br />
+						<input type="radio" id="career-align-somewhat-well" name="career-align" value="somewhat-well" />
+						<label for="career-align-somewhat-well">Somewhat well</label>
+						<br />
+						<input type="radio" id="career-align-neutral" name="career-align" value="neutral" checked />
+						<label for="career-align-neutral">Neutral</label>
+						<br />
+						<input type="radio" id="career-align-somewhat-poorly" name="career-align" value="somewhat-poorly" />
+						<label for="career-align-somewhat-poorly">Somewhat poorly</label>
+						<br />
+						<input type="radio" id="career-align-very-poorly" name="career-align" value="very-poorly" />
+						<label for="career-align-very-poorly">Very poorly</label>
+					</div>
+					<div class="form-section">
+						<h2>How satisfied are you with your current salary and benefits package?</h2>
+						<input type="radio" id="salary-very-satisfied" name="salary" value="very-satisfied" />
+						<label for="salary-very-satisfied">Very satisfied</label>
+						<br />
+						<input type="radio" id="salary-somewhat-satisfied" name="salary" value="somewhat-satisfied" />
+						<label for="salary-somewhat-satisfied">Somewhat satisfied</label>
+						<br />
+						<input type="radio" id="salary-neutral" name="salary" value="neutral" checked />
+						<label for="salary-neutral">Neutral</label>
+						<br />
+						<input type="radio" id="salary-somewhat-dissatisfied" name="salary" value="somewhat-dissatisfied" />
+						<label for="salary-somewhat-dissatisfied">Somewhat dissatisfied</label>
+						<br />
+						<input type="radio" id="salary-very-dissatisfied" name="salary" value="very-dissatisfied" />
+						<label for="salary-very-dissatisfied">Very dissatisfied</label>
+					</div>
+					<div class="form-section">
+						<h2>How satisfied are you with the opportunities for professional growth and development at our company?</h2>
+						<input type="radio" id="growth-very-satisfied" name="growth" value="very-satisfied" />
+						<label for="growth-very-satisfied">Very satisfied</label>
+						<br />
+						<input type="radio" id="growth-somewhat-satisfied" name="growth" value="somewhat-satisfied" />
+						<label for="growth-somewhat-satisfied">Somewhat satisfied</label>
+						<br />
+						<input type="radio" id="growth-neutral" name="growth" value="neutral" checked />
+						<label for="growth-neutral">Neutral</label>
+						<br />
+						<input type="radio" id="growth-somewhat-dissatisfied" name="growth" value="somewhat-dissatisfied" />
+						<label for="growth-somewhat-dissatisfied">Somewhat dissatisfied</label>
+						<br />
+						<input type="radio" id="growth-very-dissatisfied" name="growth" value="very-dissatisfied" />
+						<label for="growth-very-dissatisfied">Very dissatisfied</label>
+					</div>
+					<div class="form-section">
+						<h2>How satisfied are you with the level of communication between management and employees?</h2>
+						<input type="radio" id="communication-very-satisfied" name="communication" value="very-satisfied" />
+						<label for="communication-very-satisfied">Very satisfied</label>
+						<br />
+						<input type="radio" id="communication-somewhat-satisfied" name="communication" value="somewhat-satisfied" />
+						<label for="communication-somewhat-satisfied">Somewhat satisfied</label>
+						<br />
+						<input type="radio" id="communication-neutral" name="communication" value="neutral" checked />
+						<label for="communication-neutral">Neutral</label>
+						<br />
+						<input type="radio" id="communication-somewhat-dissatisfied" name="communication" value="somewhat-dissatisfied" />
+						<label for="communication-somewhat-dissatisfied">Somewhat dissatisfied</label>
+						<br />
+						<input type="radio" id="communication-very-dissatisfied" name="communication" value="very-dissatisfied" />
+						<label for="communication-very-dissatisfied">Very dissatisfied</label>
+					</div>
+					<div class="form-section">
+						<h2>How satisfied are you with the level of work-life balance you are able to maintain?</h2>
+						<input type="radio" id="work-life-balance-very-satisfied" name="work-life-balance" value="very-satisfied" />
+						<label for="work-life-balance-very-satisfied">Very satisfied</label>
+						<br />
+						<input type="radio" id="work-life-balance-somewhat-satisfied" name="work-life-balance" value="somewhat-satisfied" />
+						<label for="work-life-balance-somewhat-satisfied">Somewhat satisfied</label>
+						<br />
+						<input type="radio" id="work-life-balance-neutral" name="work-life-balance" value="neutral" checked />
+						<label for="work-life-balance-neutral">Neutral</label>
+						<br />
+						<input type="radio" id="work-life-balance-somewhat-dissatisfied" name="work-life-balance" value="somewhat-dissatisfied" />
+						<label for="work-life-balance-somewhat-dissatisfied">Somewhat dissatisfied</label>
+						<br />
+						<input type="radio" id="work-life-balance-very-dissatisfied" name="work-life-balance" value="very-dissatisfied" />
+						<label for="work-life-balance-very-dissatisfied">Very dissatisfied</label>
+					</div>
+					<div class="form-section">
+						<h2>Which of the following factors contribute to your overall job satisfaction? (Check all that apply)</h2>
+						<input type="checkbox" id="benefits" name="important" value="benefits" />
+						<label for="benefits">Benefits</label>
+						<br />
+						<input type="checkbox" id="company-culture" name="important" value="company-culture" />
+						<label for="company-culture">Company culture</label>
+						<br />
+						<input type="checkbox" id="meaningful-work" name="important" value="meaningful-work" />
+						<label for="meaningful-work">Meaningful work</label>
+						<br />
+						<input type="checkbox" id="job-security" name="important" value="job-security" />
+						<label for="job-security">Job security</label>
+						<br />
+						<input type="checkbox" id="salary" name="important" value="salary" />
+						<label for="salary">Salary</label>
+						<br />
+						<input type="checkbox" id="supportive-colleagues" name="important" value="supportive-colleagues" />
+						<label for="supportive-colleagues">Supportive colleagues</label>
+						<br />
+						<input type="checkbox" id="professional-development-opportunities" name="important" value="professional-development-opportunities" />
+						<label for="professional-development-opportunities">Professional development opportunities</label>
+						<br />
+						<input type="checkbox" id="work-life-balance" name="important" value="work-life-balance" />
+						<label for="work-life-balance">Work-Life balance</label>
+					</div>
+					<div class="form-section">
+						<h2>Any comments or suggestions?</h2>
+						<textarea name="additional-comments" id="additional-comments" placeholder="Please enter your comments or suggestions here"></textarea>
+					</div>
+					<div class="form-section">
+						<button type="submit" id="submit">Submit</button>
+					</div>
+				</form>
+			</main>
 		</div>
 	</body>
 </html>
